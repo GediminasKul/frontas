@@ -6,8 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="./js/script.js" defer></script>
     <title>VetBee</title>
   </head>
-  <body></body>
+  <body>
+    <header class="head">
+      <div class="header">
+        <img src="http://www.petras.slekys.com/images/projects/vetbee.png" alt="vetbee logo" />
+        <nav class="nav">
+          <a href="index.html">Pets</a>
+          <a href="medication.html">Medications</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="log">
+        <div class="title-div">
+          <h1 class="logTitle">Loading...</h1>
+          <div>
+            <button class="presc-btn">ADD PRESCRIPTION</button>
+            <button class="log-btn">ADD LOG</button>
+          </div>
+        </div>
+        <div class="display-div">
+          <p>Display:</p>
+          <button id="displayLogs" class="displayBtn active">LOGS <i class="fa fa-check"></i></button>
+          <button id="displayPresc" class="displayBtn active">PRESCRIPTIONS <i class="fa fa-check"></i></button>
+        </div>
+      </section>
+      <section class="grid"></section>
+    </main>
+    <footer class="footer">
+      <h2>Copyright © VetBee 2018. All rights reserved.</h2>
+    </footer>
+  </body>
 </html>
